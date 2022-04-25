@@ -1,0 +1,10 @@
+<mvc:View controllerName="itmo_2022_calendar_yis.controller.Calendar" xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="viewPadding">
+	<l:HorizontalLayout>
+		<u:Calendar id="calendar" months="12" legend="legend" select="handleCalendarSelect" intervalSelection="false" singleSelection="false"/>
+		<l:VerticalLayout>
+			<u:CalendarLegend id="legend"/>
+			<Button press="handleRemoveSelection" text="Remove All Selected Dates"/>
+		</l:VerticalLayout>
+	</l:HorizontalLayout>
+</mvc:View>
