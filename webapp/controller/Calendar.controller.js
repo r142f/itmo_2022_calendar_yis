@@ -47,7 +47,7 @@ sap.ui.define([
 			});
 			this.getView().setModel(this.oModel);
 
-			var oModelX = new sap.ui.model.xml.XMLModel();
+			var oModelX = new XMLModel();
 			oModelX.attachRequestCompleted(function() {
 				var xmlStr = oModelX.getXML();
 				var oParser = new DOMParser();
